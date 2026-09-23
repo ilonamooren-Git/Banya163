@@ -1,0 +1,61 @@
+{%- set nav = [
+  ["/het-huisje/", "Het huisje"],
+  ["/wellness/", "Wellness & tuin"],
+  ["/omgeving/", "Omgeving"],
+  ["/boeken/", "Beschikbaarheid"],
+  ["/praktisch/", "Praktisch"]
+] -%}
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} · {% endif %}{{ site.name }} — {{ site.tagline }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <meta property="og:title" content="{{ title or site.name }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:image" content="{{ home.hero.image }}">
+  <link rel="icon" href="{{ site.logo }}">
+  <link rel="preload" href="/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="b-head">
+      <a class="brand" href="/"><img src="{{ site.logo }}" alt="" eleventy:ignore><span>BANYA<small>163</small></span></a>
+      <nav class="b-nav" aria-label="Hoofdmenu">
+        {%- for item in nav %}
+        <a href="{{ item[0] }}"{% if page.url == item[0] %} aria-current="page"{% endif %}>{{ item[1] }}</a>
+        {%- endfor %}
+      </nav>
+      <a href="/boeken/#kalender" class="btn btn-primary">Boek nu</a>
+    </div>
+  </header>
+
+  {{ content | safe }}
+
+  <footer class="site-footer">
+    <div class="foot">
+      <div><img class="foot-logo" src="{{ site.logo_large }}" alt="{{ site.name }}"></div>
+      <div>
+        <h4>Pagina's</h4>
+        <div class="foot-links">
+          {%- for item in nav %}<a href="{{ item[0] }}">{{ item[1] }}</a>{% endfor %}
+          <a href="/fotos/">Foto's</a>
+        </div>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="mailto:{{ site.email }}">{{ site.email }}</a><br>{{ site.phone }}<br>{{ site.address | lines | safe }}</p>
+      </div>
+      <div>
+        <h4>Boeken</h4>
+        <p>{{ site.booking_text }}</p>
+        <a href="/boeken/#kalender" class="btn btn-primary">Boek nu</a>
+      </div>
+    </div>
+    <div class="foot-bar"><div>© {{ site.name }} — {{ site.tagline }}</div></div>
+  </footer>
+</body>
+</html>
