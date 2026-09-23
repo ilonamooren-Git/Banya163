@@ -1,0 +1,326 @@
+# Pages CMS — beheer van teksten en foto's (https://app.pagescms.org)
+# Tekstvakken: een lege regel maakt een nieuwe alinea.
+# Lege foto = er verschijnt een beige vak met de omschrijving; vul die vóór livegang.
+
+media:
+  input: pages/images
+  output: /images
+
+content:
+  - name: site
+    label: Algemeen (contact & footer)
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - { name: name, label: Naam, type: string }
+      - { name: tagline, label: Ondertitel, type: string }
+      - { name: description, label: Omschrijving voor Google, type: text }
+      - { name: email, label: E-mailadres, type: string }
+      - { name: phone, label: Telefoon, type: string }
+      - { name: address, label: Adres, type: text }
+      - { name: booking_text, label: Tekst 'Boeken' in footer, type: text }
+      - { name: logo, label: Logo (klein, header), type: image }
+      - { name: logo_large, label: Logo (groot, footer), type: image }
+
+  - name: home
+    label: Home
+    type: file
+    path: content/home.json
+    format: json
+    fields:
+      - name: hero
+        label: Openingsbeeld
+        type: object
+        fields:
+          - { name: label, label: Labeltje, type: string }
+          - { name: title, label: Titel, type: string }
+          - { name: text, label: Tekst, type: text }
+          - { name: image, label: Foto, type: image }
+          - { name: image_alt, label: Omschrijving foto, type: string }
+          - { name: button_primary, label: Knop 1, type: string }
+          - { name: button_secondary, label: Knop 2, type: string }
+      - name: facts
+        label: Kenmerken (balk onder de foto)
+        type: object
+        list: true
+        fields:
+          - { name: value, label: Groot, type: string }
+          - { name: label, label: Klein, type: string }
+      - name: intro
+        label: Welkom
+        type: object
+        fields:
+          - { name: title, label: Titel, type: string }
+          - { name: text, label: Tekst, type: text }
+          - { name: tags, label: Labels, type: string, list: true }
+          - { name: image_1, label: Foto 1, type: image }
+          - { name: image_1_alt, label: Omschrijving foto 1, type: string }
+          - { name: image_2, label: Foto 2, type: image }
+          - { name: image_2_alt, label: Omschrijving foto 2, type: string }
+      - name: features
+        label: Wat je hier vindt
+        type: object
+        fields:
+          - { name: title, label: Titel, type: string }
+          - name: cards
+            label: Kaarten
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Titel, type: string }
+              - { name: text, label: Tekst, type: text }
+              - { name: image, label: Foto, type: image }
+              - { name: image_alt, label: Omschrijving foto, type: string }
+              - { name: link_text, label: Linktekst, type: string }
+              - name: link
+                label: Link naar
+                type: select
+                options:
+                  values:
+                    - { value: /het-huisje/, label: Het huisje }
+                    - { value: /wellness/, label: Wellness & tuin }
+                    - { value: /omgeving/, label: Omgeving }
+                    - { value: /fotos/, label: Foto's }
+                    - { value: /boeken/, label: Beschikbaarheid }
+                    - { value: /praktisch/, label: Praktisch }
+      - name: dog
+        label: Hond welkom
+        type: object
+        fields:
+          - { name: title, label: Titel, type: string }
+          - { name: text, label: Tekst, type: text }
+          - { name: image, label: Foto, type: image }
+          - { name: image_alt, label: Omschrijving foto, type: string }
+      - name: about
+        label: Wie wij zijn
+        type: object
+        fields:
+          - { name: title, label: Titel, type: string }
+          - { name: text, label: Tekst, type: text }
+          - { name: image, label: Foto, type: image }
+          - { name: image_alt, label: Omschrijving foto, type: string }
+      - name: mood
+        label: Sfeer
+        type: object
+        fields:
+          - { name: title, label: Titel, type: string }
+          - { name: subtitle, label: Ondertitel, type: string }
+          - name: images
+            label: Foto's
+            type: object
+            list: true
+            fields:
+              - { name: image, label: Foto, type: image }
+              - { name: alt, label: Omschrijving, type: string }
+          - { name: button, label: Knoptekst, type: string }
+      - name: reviews
+        label: Wat gasten zeggen
+        type: object
+        fields:
+          - { name: title, label: Titel, type: string }
+          - name: items
+            label: Reviews
+            type: object
+            list: true
+            fields:
+              - { name: quote, label: Quote, type: text }
+              - { name: author, label: Naam · maand, type: string }
+          - { name: note, label: Kleine noot eronder (leeg = weg), type: string }
+      - name: cta
+        label: Blok 'Kijk wanneer het huisje vrij is'
+        type: object
+        fields:
+          - { name: title, label: Titel, type: string }
+          - { name: text, label: Tekst, type: text }
+          - { name: button, label: Knoptekst, type: string }
+
+  - name: huisje
+    label: Het huisje
+    type: file
+    path: content/huisje.json
+    format: json
+    fields:
+      - { name: title, label: Titel, type: string }
+      - { name: intro, label: Intro, type: text }
+      - { name: hero_image, label: Grote foto, type: image }
+      - { name: hero_alt, label: Omschrijving grote foto, type: string }
+      - name: sleep
+        label: Slapen
+        type: object
+        fields:
+          - { name: title, label: Titel, type: string }
+          - { name: text, label: Tekst, type: text }
+          - { name: items, label: Opsomming, type: string, list: true }
+          - { name: image_1, label: Foto 1, type: image }
+          - { name: image_1_alt, label: Omschrijving foto 1, type: string }
+          - { name: image_2, label: Foto 2, type: image }
+          - { name: image_2_alt, label: Omschrijving foto 2, type: string }
+      - name: kitchen
+        label: Keuken
+        type: object
+        fields:
+          - { name: title, label: Titel, type: string }
+          - { name: text, label: Tekst, type: text }
+          - { name: tags, label: Labels, type: string, list: true }
+          - { name: image, label: Foto, type: image }
+          - { name: image_alt, label: Omschrijving foto, type: string }
+      - name: inside
+        label: Binnen
+        type: object
+        fields:
+          - { name: title, label: Titel, type: string }
+          - { name: text, label: Tekst, type: text }
+          - name: images
+            label: Foto's
+            type: object
+            list: true
+            fields:
+              - { name: image, label: Foto, type: image }
+              - { name: alt, label: Omschrijving, type: string }
+
+  - name: wellness
+    label: Wellness & tuin
+    type: file
+    path: content/wellness.json
+    format: json
+    fields:
+      - { name: title, label: Titel, type: string }
+      - { name: intro, label: Intro, type: text }
+      - { name: hero_image, label: Grote foto, type: image }
+      - { name: hero_alt, label: Omschrijving grote foto, type: string }
+      - name: sauna
+        label: Sauna
+        type: object
+        fields:
+          - { name: title, label: Titel, type: string }
+          - { name: text, label: Tekst, type: text }
+          - { name: image, label: Foto, type: image }
+          - { name: image_alt, label: Omschrijving foto, type: string }
+      - name: hottub
+        label: Hottub
+        type: object
+        fields:
+          - { name: title, label: Titel, type: string }
+          - { name: text, label: Tekst, type: text }
+          - { name: image, label: Foto, type: image }
+          - { name: image_alt, label: Omschrijving foto, type: string }
+      - name: bbq
+        label: BBQ
+        type: object
+        fields:
+          - { name: title, label: Titel, type: string }
+          - { name: text, label: Tekst, type: text }
+      - name: garden
+        label: De bostuin
+        type: object
+        fields:
+          - { name: title, label: Titel, type: string }
+          - { name: text, label: Tekst, type: text }
+          - name: images
+            label: Foto's
+            type: object
+            list: true
+            fields:
+              - { name: image, label: Foto, type: image }
+              - { name: alt, label: Omschrijving, type: string }
+
+  - name: omgeving
+    label: Omgeving
+    type: file
+    path: content/omgeving.json
+    format: json
+    fields:
+      - { name: title, label: Titel, type: string }
+      - { name: intro, label: Intro, type: text }
+      - { name: hero_image, label: Grote foto, type: image }
+      - { name: hero_alt, label: Omschrijving grote foto, type: string }
+      - name: activities
+        label: Activiteiten
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Titel, type: string }
+          - { name: text, label: Tekst, type: text }
+      - name: guestbook
+        label: Gastenboek
+        type: object
+        fields:
+          - { name: title, label: Titel, type: string }
+          - { name: text, label: Tekst, type: text }
+      - name: images
+        label: Foto's
+        type: object
+        list: true
+        fields:
+          - { name: image, label: Foto, type: image }
+          - { name: alt, label: Omschrijving, type: string }
+
+  - name: fotos
+    label: Foto's
+    type: file
+    path: content/fotos.json
+    format: json
+    fields:
+      - { name: title, label: Titel, type: string }
+      - { name: intro, label: Intro, type: text }
+      - name: photos
+        label: Foto's
+        type: object
+        list: true
+        fields:
+          - { name: image, label: Foto, type: image }
+          - { name: alt, label: Omschrijving, type: string }
+          - { name: wide, label: Breed (2 kolommen), type: boolean }
+
+  - name: boeken
+    label: Beschikbaarheid & prijzen
+    type: file
+    path: content/boeken.json
+    format: json
+    fields:
+      - { name: title, label: Titel, type: string }
+      - { name: intro, label: Intro, type: text }
+      - { name: calendar_title, label: Titel kalender, type: string }
+      - { name: calendar_text, label: Tekst kalender, type: string }
+      - { name: booking_title, label: Titel boekformulier, type: string }
+      - { name: rates_title, label: Titel tarieven, type: string }
+      - name: rates
+        label: Tarieven
+        type: object
+        list: true
+        fields:
+          - { name: period, label: Periode, type: string }
+          - { name: price, label: Prijs, type: string }
+      - { name: rates_note, label: Noot onder tarieven, type: string }
+      - { name: included_title, label: Titel inbegrepen, type: string }
+      - { name: included, label: Inbegrepen, type: string, list: true }
+      - { name: extras_title, label: Titel bijkomend, type: string }
+      - { name: extras, label: Bijkomende kosten, type: string, list: true }
+      - { name: checkin, label: Inchecken, type: string }
+      - { name: checkout, label: Uitchecken, type: string }
+      - { name: checkout_note, label: Noot uitchecken, type: string }
+      - { name: min_stay, label: Minimaal verblijf, type: string }
+
+  - name: praktisch
+    label: Praktisch
+    type: file
+    path: content/praktisch.json
+    format: json
+    fields:
+      - { name: title, label: Titel, type: string }
+      - { name: intro, label: Intro, type: text }
+      - { name: rules_title, label: Titel huisregels, type: string }
+      - { name: rules, label: Huisregels, type: string, list: true }
+      - { name: dog_title, label: Titel hond, type: string }
+      - { name: dog_text, label: Tekst hond, type: text }
+      - { name: faq_title, label: Titel FAQ, type: string }
+      - name: faq
+        label: Veelgestelde vragen
+        type: object
+        list: true
+        fields:
+          - { name: question, label: Vraag, type: string }
+          - { name: answer, label: Antwoord, type: text }
+      - { name: contact_title, label: Titel contact, type: string }
+      - { name: contact_text, label: Tekst contact, type: text }
