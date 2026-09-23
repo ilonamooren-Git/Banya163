@@ -1,0 +1,51 @@
+{
+  "title": "Foto's",
+  "intro": "Het huisje, de tuin en de omgeving.",
+  "photos": [
+    {
+      "image": "/images/veranda-avond.jpg",
+      "alt": "Banya 163",
+      "wide": true
+    },
+    {
+      "image": "/images/hottub-avond.jpg",
+      "alt": "Hottub in de avond",
+      "wide": false
+    },
+    {
+      "image": "/images/barrelsauna.jpg",
+      "alt": "Barrelsauna",
+      "wide": false
+    },
+    {
+      "image": "/images/bostuin.jpg",
+      "alt": "De bostuin",
+      "wide": false
+    },
+    {
+      "image": "",
+      "alt": "Keuken",
+      "wide": false
+    },
+    {
+      "image": "",
+      "alt": "Slaapkamer",
+      "wide": false
+    },
+    {
+      "image": "",
+      "alt": "Woonkamer",
+      "wide": false
+    },
+    {
+      "image": "/images/groote-peel.jpg",
+      "alt": "De Groote Peel",
+      "wide": true
+    },
+    {
+      "image": "",
+      "alt": "Hond in de tuin",
+      "wide": false
+    }
+  ]
+}

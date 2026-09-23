@@ -1,0 +1,40 @@
+{
+  "title": "Praktisch",
+  "intro": "Alles wat handig is om te weten voordat je komt.",
+  "rules_title": "Huisregels",
+  "rules": [
+    "Niet roken in het huisje",
+    "Maximaal 4 personen",
+    "Geen feesten; na 22:00 uur is het stil op het park",
+    "Sauna en hottub op eigen gebruik en risico",
+    "Laat het huisje achter zoals je het aantrof",
+    "We hebben alles met zorg en liefde ingericht; we waarderen het als je er net zo zorgvuldig mee omgaat"
+  ],
+  "dog_title": "Met je hond",
+  "dog_text": "Eén hond is welkom, in overleg twee. De tuin is omheind. We vragen je de hond niet op de bank of het bed te laten en hem niet alleen in het huisje achter te laten.\n\nVoer- en drinkbak, een handdoek en een mand staan klaar.",
+  "faq_title": "Veelgestelde vragen",
+  "faq": [
+    {
+      "question": "Hoe werkt de sauna?",
+      "answer": "De barrelsauna is elektrisch en binnen een half uur op temperatuur. In het huisje ligt een korte instructie."
+    },
+    {
+      "question": "Is er wifi?",
+      "answer": "Ja, snel en stabiel — al hopen we dat je hem weinig nodig hebt."
+    },
+    {
+      "question": "Waar parkeer ik?",
+      "answer": "Er is een eigen parkeerplaats naast het huisje, plek voor één auto. Een laadpaal is aanwezig."
+    },
+    {
+      "question": "Kan ik annuleren?",
+      "answer": "Kosteloos annuleren kan tot 48 uur van tevoren. Bij annulering binnen 48 uur brengen we 25% in rekening, en korter dan 24 uur van tevoren zijn we genoodzaakt de volledige kosten door te berekenen."
+    },
+    {
+      "question": "Zijn kinderen welkom?",
+      "answer": "Zeker. Een kinderbedje en kinderstoel zijn op aanvraag beschikbaar."
+    }
+  ],
+  "contact_title": "Contact",
+  "contact_text": "Een vraag voordat je boekt? Stuur ons gerust een bericht, we reageren meestal dezelfde dag."
+}

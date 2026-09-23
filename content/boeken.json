@@ -1,0 +1,49 @@
+{
+  "title": "Beschikbaarheid & prijzen",
+  "intro": "De kalender hieronder komt rechtstreeks uit Smoobu. Wat vrij staat, is ook echt vrij — je boekt direct bij ons, zonder bemiddelingskosten.",
+  "calendar_title": "Kalender",
+  "calendar_text": "Rechtstreeks uit Smoobu, dus altijd actueel.",
+  "booking_title": "Direct boeken",
+  "rates_title": "Tarieven",
+  "rates": [
+    {
+      "period": "Laagseizoen",
+      "price": "€ 000"
+    },
+    {
+      "period": "Midseizoen",
+      "price": "€ 000"
+    },
+    {
+      "period": "Hoogseizoen & feestdagen",
+      "price": "€ 000"
+    },
+    {
+      "period": "Weekend (2 nachten)",
+      "price": "€ 000"
+    },
+    {
+      "period": "Midweek (4 nachten)",
+      "price": "€ 000"
+    }
+  ],
+  "rates_note": "Indicatie per nacht. Smoobu toont de actuele prijs bij de gekozen datums.",
+  "included_title": "Inbegrepen",
+  "included": [
+    "Beddengoed, hand- en saunadoeken",
+    "Eindschoonmaak",
+    "Gebruik van sauna en hottub",
+    "Wifi, airco en pelletkachel",
+    "Pellets voor de kachel",
+    "Eigen parkeerplaats met laadpaal"
+  ],
+  "extras_title": "Bijkomend",
+  "extras": [
+    "Huisdier — € 00 per verblijf",
+    "Toeristenbelasting — € 0,00 p.p.p.n."
+  ],
+  "checkin": "Vanaf 15:00 uur",
+  "checkout": "Tot 10:30 uur",
+  "checkout_note": "Later uitchecken kan in overleg, bij beschikbaarheid.",
+  "min_stay": "2 nachten"
+}

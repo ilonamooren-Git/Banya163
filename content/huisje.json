@@ -1,0 +1,52 @@
+{
+  "title": "Het huisje",
+  "intro": "Helemaal van hout, ingericht voor vier personen. Licht, warm en zonder ruis: geen televisie op de voorgrond, wel een pelletkachel, boeken en uitzicht op de tuin.",
+  "hero_image": "/images/veranda-avond.jpg",
+  "hero_alt": "Vooraanzicht van het huisje",
+  "sleep": {
+    "title": "Slapen",
+    "text": "Twee slaapkamers: één met een tweepersoonsbed, één met twee eenpersoonsbedden. Bedden zijn bij aankomst opgemaakt met linnen beddengoed. De badkamer heeft een douche.",
+    "items": [
+      "Slaapkamer 1 — tweepersoonsbed",
+      "Slaapkamer 2 — twee eenpersoonsbedden",
+      "Badkamer met douche",
+      "Beddengoed, handdoeken en badjassen inbegrepen"
+    ],
+    "image_1": "",
+    "image_1_alt": "Slaapkamer 1",
+    "image_2": "",
+    "image_2_alt": "Slaapkamer 2"
+  },
+  "kitchen": {
+    "title": "De keuken",
+    "text": "Een luxe keuken met een grote SMEG-oven, inductie, vaatwasser en alles wat je nodig hebt om echt te koken. Verse kruiden pluk je in de tuin en de voorraadpotten vullen we geregeld bij met pasta, rijst en meer. Verse eieren haal je bij de boer verderop.\n\nEr staat een Nespresso-apparaat met melkopschuimer klaar, inclusief een standaard aantal cupjes. Eten doe je aan de houten tafel binnen, of buiten op de veranda als het weer meewerkt.",
+    "tags": [
+      "SMEG-oven",
+      "Inductie",
+      "Vaatwasser",
+      "Nespresso + melkopschuimer",
+      "Verse kruiden uit de tuin",
+      "Eettafel voor 4"
+    ],
+    "image": "",
+    "image_alt": "De keuken met SMEG-oven"
+  },
+  "inside": {
+    "title": "Binnen",
+    "text": "De woonkamer draait om de pelletkachel. Zitbank, leesstoel, wifi en genoeg dekentjes. Het is een echt houten huisje: knus en warm ingericht, en het kraakt en piept af en toe. Naast de pelletkachel is er een airco om te koelen én te verwarmen.",
+    "images": [
+      {
+        "image": "",
+        "alt": "Woonkamer"
+      },
+      {
+        "image": "",
+        "alt": "Pelletkachel"
+      },
+      {
+        "image": "",
+        "alt": "Badkamer"
+      }
+    ]
+  }
+}

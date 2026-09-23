@@ -1,0 +1,38 @@
+{
+  "title": "De Groote Peel",
+  "intro": "Nationaal Park De Groote Peel ligt op wandelafstand: hoogveen, vennen, knuppelpaden en vogels. Bij zonsopkomst hangt de mist er nog laag over het water.",
+  "hero_image": "/images/groote-peel.jpg",
+  "hero_alt": "De Groote Peel",
+  "activities": [
+    {
+      "title": "Wandelen",
+      "text": "Vanaf de tuin het bospad op. Routes van drie tot vijftien kilometer, grotendeels over knuppelpaden."
+    },
+    {
+      "title": "Fietsen",
+      "text": "Knooppuntenroutes door de Peel en de dorpen eromheen. Fietsen zijn in de buurt te huur."
+    },
+    {
+      "title": "Vogels kijken",
+      "text": "In het najaar trekken kraanvogels over. Een verrekijker ligt in de kast."
+    },
+    {
+      "title": "Eten in de buurt",
+      "text": "Een paar goede adressen in de dorpen; onze tips liggen voor je klaar in het gastenboek."
+    }
+  ],
+  "guestbook": {
+    "title": "Het gastenboek",
+    "text": "In het huisje ligt een gastenboek met praktische uitleg over alles in en rondom het huisje, en met uitgebreide tips: een goed restaurant, een mooie wandelroute of andere activiteiten in de buurt."
+  },
+  "images": [
+    {
+      "image": "",
+      "alt": "Knuppelpad"
+    },
+    {
+      "image": "",
+      "alt": "Ven of heide"
+    }
+  ]
+}
