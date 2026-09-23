@@ -1,0 +1,17 @@
+---
+layout: base.njk
+permalink: /fotos/
+eleventyComputed:
+  title: "{{ fotos.title }}"
+---
+{% from "macros.njk" import photo %}
+{% set d = fotos %}
+<main class="page">
+  <h1>{{ d.title }}</h1>
+  <p class="lead">{{ d.intro }}</p>
+  <div class="grid-photos" style="margin-top: 36px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+    {%- for p in d.photos %}
+    <div class="{% if p.wide %}wide{% endif %}" style="height: {% if p.wide %}340{% else %}300{% endif %}px;{% if p.wide %} grid-column: span 2;{% endif %}">{{ photo(p.image, p.alt) }}</div>
+    {%- endfor %}
+  </div>
+</main>

@@ -1,0 +1,101 @@
+---
+layout: base.njk
+permalink: /
+---
+{% from "macros.njk" import photo %}
+{% set h = home %}
+<main>
+  <section class="hero">
+    <img src="{{ h.hero.image }}" alt="{{ h.hero.image_alt }}" loading="eager" fetchpriority="high" sizes="100vw">
+    <div class="hero-inner">
+      <span class="hero-label">{{ h.hero.label }}</span>
+      <h1>{{ h.hero.title }}</h1>
+      <p>{{ h.hero.text }}</p>
+      <div class="hero-actions">
+        <a href="/boeken/#kalender" class="btn btn-primary btn-lg">{{ h.hero.button_primary }}</a>
+        <a href="/het-huisje/" class="btn btn-light btn-lg">{{ h.hero.button_secondary }}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="facts">
+      {%- for f in h.facts %}<div><b>{{ f.value }}</b><span>{{ f.label }}</span></div>{% endfor %}
+    </div>
+  </section>
+
+  <section class="sec split center" style="gap: 56px;">
+    <div class="measure">
+      <h2 class="h2" style="font-size: clamp(30px, 4vw, 44px); margin-bottom: 18px;">{{ h.intro.title }}</h2>
+      {{ h.intro.text | paras | safe }}
+      <div class="tags">{% for t in h.intro.tags %}<span class="tag tag-green">{{ t }}</span>{% endfor %}</div>
+    </div>
+    <div class="pair">
+      <div style="height: 260px;">{{ photo(h.intro.image_1, h.intro.image_1_alt) }}</div>
+      <div style="height: 260px; margin-top: 40px;">{{ photo(h.intro.image_2, h.intro.image_2_alt) }}</div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2 class="h2">{{ h.features.title }}</h2>
+    <div class="grid-cards">
+      {%- for c in h.features.cards %}
+      <article class="card">
+        <div class="card-img">{{ photo(c.image, c.image_alt, true) }}</div>
+        <div class="card-body">
+          <h3>{{ c.title }}</h3>
+          <p>{{ c.text }}</p>
+          {% if c.link %}<a href="{{ c.link }}" class="btn btn-ghost">{{ c.link_text }}</a>{% endif %}
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap split center">
+      <div>
+        <h2>{{ h.dog.title }}</h2>
+        {{ h.dog.text | paras | safe }}
+      </div>
+      <div style="height: 300px;">{{ photo(h.dog.image, h.dog.image_alt) }}</div>
+    </div>
+  </section>
+
+  <section class="sec split center" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+    <div style="height: 320px;">{{ photo(h.about.image, h.about.image_alt) }}</div>
+    <div class="measure">
+      <h2 class="h2" style="margin-bottom: 16px;">{{ h.about.title }}</h2>
+      {{ h.about.text | paras | safe }}
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2 class="h2" style="margin-bottom: 8px;">{{ h.mood.title }}</h2>
+    <p class="muted" style="margin-bottom: 28px;">{{ h.mood.subtitle }}</p>
+    <div class="grid-photos">
+      {%- for m in h.mood.images %}<div style="height: 300px;">{{ photo(m.image, m.alt) }}</div>{% endfor %}
+    </div>
+    <div style="margin-top: 24px;"><a href="/fotos/" class="btn btn-secondary">{{ h.mood.button }}</a></div>
+  </section>
+
+  {% if h.reviews.items | length %}
+  <section class="sec">
+    <h2 class="h2">{{ h.reviews.title }}</h2>
+    <div class="grid-cards">
+      {%- for r in h.reviews.items %}
+      <blockquote class="quote"><p>"{{ r.quote }}"</p><footer>{{ r.author }}</footer></blockquote>
+      {%- endfor %}
+    </div>
+    {% if h.reviews.note %}<p class="small-note">{{ h.reviews.note }}</p>{% endif %}
+  </section>
+  {% endif %}
+
+  <section class="sec">
+    <div class="panel-peach cta">
+      <h2>{{ h.cta.title }}</h2>
+      <p class="peach-text">{{ h.cta.text }}</p>
+      <a href="/boeken/#kalender" class="btn btn-primary btn-lg">{{ h.cta.button }}</a>
+    </div>
+  </section>
+</main>

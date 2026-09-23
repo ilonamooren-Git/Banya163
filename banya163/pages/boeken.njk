@@ -1,0 +1,46 @@
+---
+layout: base.njk
+permalink: /boeken/
+eleventyComputed:
+  title: "{{ boeken.title }}"
+  description: "{{ boeken.intro }}"
+---
+{% set d = boeken %}
+<main class="page">
+  <h1>{{ d.title }}</h1>
+  <p class="lead">{{ d.intro }}</p>
+
+  <section id="kalender" class="smoobu-box" style="margin-top: 40px;">
+    <h2>{{ d.calendar_title }}</h2>
+    <p class="muted" style="font-size: 15px; margin-bottom: 22px;">{{ d.calendar_text }}</p>
+    <div class="smoobu-frame">{% include "smoobu-kalender.njk" %}</div>
+  </section>
+
+  <section id="boeken" class="smoobu-box" style="margin-top: 24px;">
+    <h2 style="margin-bottom: 22px;">{{ d.booking_title }}</h2>
+    <div class="smoobu-frame">{% include "smoobu-boeken.njk" %}</div>
+  </section>
+
+  <section class="block-sm split" style="gap: 40px;">
+    <div>
+      <h2 style="font-size: 30px; margin-bottom: 16px;">{{ d.rates_title }}</h2>
+      <table class="table">
+        <thead><tr><th>Periode</th><th class="r">Per nacht</th></tr></thead>
+        <tbody>{% for r in d.rates %}<tr><td>{{ r.period }}</td><td class="r">{{ r.price }}</td></tr>{% endfor %}</tbody>
+      </table>
+      <p class="small-note" style="margin-top: 12px;">{{ d.rates_note }}</p>
+    </div>
+    <div>
+      <h2 style="font-size: 30px; margin-bottom: 16px;">{{ d.included_title }}</h2>
+      <ul class="bullets" style="margin-top: 0;">{% for i in d.included %}<li>{{ i }}</li>{% endfor %}</ul>
+      <h3 style="font-size: 22px; margin: 28px 0 10px;">{{ d.extras_title }}</h3>
+      <ul class="bullets orange" style="margin-top: 0; color: var(--color-neutral-800);">{% for i in d.extras %}<li>{{ i }}</li>{% endfor %}</ul>
+    </div>
+  </section>
+
+  <section class="block-sm panel-peach facts-row">
+    <div><b>Inchecken</b><span class="peach-text">{{ d.checkin }}</span></div>
+    <div><b>Uitchecken</b><span class="peach-text">{{ d.checkout }}{% if d.checkout_note %}<br><span style="font-size: 14px;">{{ d.checkout_note }}</span>{% endif %}</span></div>
+    <div><b>Minimaal verblijf</b><span class="peach-text">{{ d.min_stay }}</span></div>
+  </section>
+</main>

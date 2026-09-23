@@ -1,0 +1,134 @@
+{
+  "hero": {
+    "label": "Boshuisje · Wellness · De Groote Peel",
+    "title": "Onthaasten tussen de bomen",
+    "text": "Een houten huisje voor vier, met barrelsauna, hottub en een bostuin die zo overloopt in het wandelpad. Honden zijn hier net zo welkom als jij.",
+    "image": "/images/veranda-avond.jpg",
+    "image_alt": "De veranda in de avond",
+    "button_primary": "Bekijk beschikbaarheid",
+    "button_secondary": "Het huisje"
+  },
+  "facts": [
+    {
+      "value": "4",
+      "label": "personen"
+    },
+    {
+      "value": "2",
+      "label": "slaapkamers"
+    },
+    {
+      "value": "Wellness",
+      "label": "sauna & hottub"
+    },
+    {
+      "value": "Parkeerplaats",
+      "label": "met laadpaal bij het huisje"
+    },
+    {
+      "value": "Hond welkom",
+      "label": "in huis en de volledig omheinde tuin"
+    }
+  ],
+  "intro": {
+    "title": "Welkom in Banya 163",
+    "text": "Banya 163 staat op een rustig park aan de rand van De Groote Peel. Hout, warmte en stilte: een pelletkachel die 's avonds knettert, een veranda om de dag op af te sluiten, en een tuin waar je zo het bospad op loopt.\n\nWe hebben het huisje ingericht zoals we zelf graag weg zijn. Een luxe keuken om rustig te koken, een barrelsauna en hottub voor de avond, en genoeg plekken om helemaal niets te doen.",
+    "tags": [
+      "Natuur",
+      "Wellness",
+      "Rust",
+      "Huisdieren welkom"
+    ],
+    "image_1": "",
+    "image_1_alt": "Interieur met pelletkachel",
+    "image_2": "/images/bostuin.jpg",
+    "image_2_alt": "De bostuin"
+  },
+  "features": {
+    "title": "Wat je hier vindt",
+    "cards": [
+      {
+        "title": "Sauna & hottub",
+        "text": "Stook de barrelsauna op en laat de hottub warmlopen. Tussendoor afkoelen in de buitenlucht, met alleen de bomen als publiek.",
+        "image": "/images/barrelsauna.jpg",
+        "image_alt": "Barrelsauna in de avond",
+        "link_text": "Naar wellness & tuin →",
+        "link": "/wellness/"
+      },
+      {
+        "title": "Luxe keuken",
+        "text": "Een grote SMEG-oven, goed gereedschap en ruimte om samen te koken. Boodschappen haal je in het dorp, de rest van de avond duurt vanzelf lang.",
+        "image": "",
+        "image_alt": "De SMEG-keuken",
+        "link_text": "Naar het huisje →",
+        "link": "/het-huisje/"
+      },
+      {
+        "title": "De Groote Peel",
+        "text": "Vanaf de tuin loop je het bospad op, richting het veen. Vroeg opstaan loont: mist over het water en kraanvogels in de verte.",
+        "image": "/images/groote-peel.jpg",
+        "image_alt": "De Groote Peel",
+        "link_text": "Naar de omgeving →",
+        "link": "/omgeving/"
+      }
+    ]
+  },
+  "dog": {
+    "title": "Ook je hond komt hier tot rust",
+    "text": "Huisdieren zijn van harte welkom. De tuin is volledig omheind, bij de deur staan een bak en een handdoek klaar, en het bospad begint letterlijk achter het hek.\n\nWe vragen alleen: niet op de bank en niet alleen in het huisje achterlaten.",
+    "image": "",
+    "image_alt": "Hond op de veranda"
+  },
+  "about": {
+    "title": "Wie wij zijn",
+    "text": "Wij zijn Ilona en [naam], de eigenaren van Banya 163. We bouwden het huisje op de plek waar we zelf het liefst zijn: tussen de bomen, met de sauna aan en de telefoon uit.\n\nAlles hier is met zorg ingericht, van de keuken tot de planten in de tuin. Kom je aan, dan is het huisje warm. Heb je een vraag, dan zijn we dichtbij.",
+    "image": "",
+    "image_alt": "Foto van ons samen"
+  },
+  "mood": {
+    "title": "Sfeer",
+    "subtitle": "Een indruk van het huisje, de tuin en de Peel.",
+    "images": [
+      {
+        "image": "/images/hottub-avond.jpg",
+        "alt": "Banya 163"
+      },
+      {
+        "image": "",
+        "alt": "Sfeerbeeld"
+      },
+      {
+        "image": "",
+        "alt": "Sfeerbeeld"
+      },
+      {
+        "image": "",
+        "alt": "Sfeerbeeld"
+      }
+    ],
+    "button": "Alle foto's bekijken"
+  },
+  "reviews": {
+    "title": "Wat gasten zeggen",
+    "items": [
+      {
+        "quote": "Na één avond in de sauna waren we de weg terug alweer vergeten.",
+        "author": "Maaike & Bram · oktober"
+      },
+      {
+        "quote": "Met de hond zo het bos in, en 's avonds koken in die keuken. Precies wat we zochten.",
+        "author": "Familie de Wit · maart"
+      },
+      {
+        "quote": "Stil, warm en tot in de details verzorgd. We hebben meteen opnieuw geboekt.",
+        "author": "Ineke · januari"
+      }
+    ],
+    "note": "Voorbeeldteksten — vervang ze door echte beoordelingen voordat de site live gaat."
+  },
+  "cta": {
+    "title": "Kijk wanneer het huisje vrij is",
+    "text": "De beschikbaarheid houden we real-time bij. Minimaal verblijf is 2 nachten; een andere verblijfsduur kan altijd in overleg worden afgestemd.",
+    "button": "Naar de kalender"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "title": "Wellness & tuin",
+  "intro": "De tuin is het tweede huis. Een barrelsauna tussen de struiken, een hottub op een warmtepomp, en genoeg hoeken om te verdwijnen met een boek.",
+  "hero_image": "/images/hottub-avond.jpg",
+  "hero_alt": "Hottub in de avond",
+  "sauna": {
+    "title": "Barrelsauna",
+    "text": "Een houten barrelsauna met zicht op de tuin. Wij zetten hem voor je aan de dag van aankomst; daarna stook je zelf op wanneer je wilt.",
+    "image": "/images/barrelsauna.jpg",
+    "image_alt": "Barrelsauna"
+  },
+  "hottub": {
+    "title": "Hottub",
+    "text": "De hottub staat op het terras achter het huisje en wordt verwarmd op basis van een warmtepomp. Opwarmen duurt een paar uur, dus zet hem 's ochtends aan en zak er 's avonds in, onder de sterren.\n\nWe hadden de beleving graag compleet gemaakt met een houtgestookte hottub, maar vanwege de veiligheid en de droogte in de zomermaanden is dat onverantwoord en op het park niet toegestaan.",
+    "image": "",
+    "image_alt": "Hottub van dichtbij"
+  },
+  "bbq": {
+    "title": "Elektrische BBQ",
+    "text": "In de tuin staat een elektrische BBQ klaar. Ook hier geldt de veiligheid op het park: barbecueën op kolen is helaas niet toegestaan."
+  },
+  "garden": {
+    "title": "De bostuin",
+    "text": "Aangelegd met vaste planten, grassen en veel schaduw. Achterin staat een hek dat uitkomt op het bospad — je bent binnen een minuut tussen de bomen.",
+    "images": [
+      {
+        "image": "/images/bostuin.jpg",
+        "alt": "De tuin"
+      },
+      {
+        "image": "",
+        "alt": "Terras / loungehoek"
+      },
+      {
+        "image": "",
+        "alt": "Het hek naar het bospad"
+      }
+    ]
+  }
+}

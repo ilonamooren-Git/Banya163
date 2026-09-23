@@ -1,0 +1,32 @@
+---
+layout: base.njk
+permalink: /omgeving/
+eleventyComputed:
+  title: "Omgeving"
+  description: "{{ omgeving.intro }}"
+---
+{% from "macros.njk" import photo %}
+{% set d = omgeving %}
+<main class="page">
+  <h1>{{ d.title }}</h1>
+  <p class="lead">{{ d.intro }}</p>
+  <div style="height: 420px; margin-top: 36px;">{{ photo(d.hero_image, d.hero_alt) }}</div>
+
+  <section class="block grid-cards" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+    {%- for a in d.activities %}
+    <article class="panel" style="padding: 28px 30px;">
+      <h3 style="font-size: 22px;">{{ a.title }}</h3>
+      <p style="margin: 0; color: var(--color-neutral-800);">{{ a.text }}</p>
+    </article>
+    {%- endfor %}
+  </section>
+
+  <section class="block-sm panel-peach" style="padding: 32px 36px; max-width: 820px;">
+    <h2 style="font-size: 26px; margin-bottom: 10px;">{{ d.guestbook.title }}</h2>
+    <p class="peach-text" style="margin: 0;">{{ d.guestbook.text }}</p>
+  </section>
+
+  <section class="block-sm grid-photos" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+    {%- for m in d.images %}<div style="height: 300px;">{{ photo(m.image, m.alt) }}</div>{% endfor %}
+  </section>
+</main>

@@ -1,0 +1,6 @@
+{# Foto uit het CMS. Leeg veld = zichtbaar vak met omschrijving, zodat je ziet waar nog een foto moet komen. #}
+{% macro photo(src, alt, square=false) %}
+<div class="ph{% if square %} square{% endif %}">
+  {%- if src -%}<img src="{{ src }}" alt="{{ alt }}">{%- else -%}<div class="ph-empty">{{ alt }}</div>{%- endif -%}
+</div>
+{% endmacro %}

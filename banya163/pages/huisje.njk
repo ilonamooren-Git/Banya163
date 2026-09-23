@@ -1,0 +1,43 @@
+---
+layout: base.njk
+permalink: /het-huisje/
+eleventyComputed:
+  title: "{{ huisje.title }}"
+  description: "{{ huisje.intro }}"
+---
+{% from "macros.njk" import photo %}
+{% set d = huisje %}
+<main class="page">
+  <h1>{{ d.title }}</h1>
+  <p class="lead">{{ d.intro }}</p>
+  <div style="height: 420px; margin-top: 36px;">{{ photo(d.hero_image, d.hero_alt) }}</div>
+
+  <section class="block split">
+    <div>
+      <h2 class="h2-page">{{ d.sleep.title }}</h2>
+      <div class="measure">{{ d.sleep.text | paras | safe }}</div>
+      <ul class="bullets">{% for i in d.sleep.items %}<li>{{ i }}</li>{% endfor %}</ul>
+    </div>
+    <div class="pair">
+      <div style="height: 240px;">{{ photo(d.sleep.image_1, d.sleep.image_1_alt) }}</div>
+      <div style="height: 240px;">{{ photo(d.sleep.image_2, d.sleep.image_2_alt) }}</div>
+    </div>
+  </section>
+
+  <section class="block split">
+    <div style="height: 380px;">{{ photo(d.kitchen.image, d.kitchen.image_alt) }}</div>
+    <div>
+      <h2 class="h2-page">{{ d.kitchen.title }}</h2>
+      <div class="measure">{{ d.kitchen.text | paras | safe }}</div>
+      <div class="tags">{% for t in d.kitchen.tags %}<span class="tag tag-neutral">{{ t }}</span>{% endfor %}</div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="h2-page">{{ d.inside.title }}</h2>
+    <div class="measure-wide">{{ d.inside.text | paras | safe }}</div>
+    <div class="grid-photos" style="margin-top: 24px;">
+      {%- for m in d.inside.images %}<div style="height: 280px;">{{ photo(m.image, m.alt) }}</div>{% endfor %}
+    </div>
+  </section>
+</main>

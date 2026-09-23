@@ -1,0 +1,40 @@
+---
+layout: base.njk
+permalink: /wellness/
+eleventyComputed:
+  title: "{{ wellness.title }}"
+  description: "{{ wellness.intro }}"
+---
+{% from "macros.njk" import photo %}
+{% set d = wellness %}
+<main class="page">
+  <h1>{{ d.title }}</h1>
+  <p class="lead">{{ d.intro }}</p>
+  <div style="height: 440px; margin-top: 36px;">{{ photo(d.hero_image, d.hero_alt) }}</div>
+
+  <section class="block split">
+    <div class="measure">
+      <h2 class="h2-page">{{ d.sauna.title }}</h2>
+      {{ d.sauna.text | paras | safe }}
+      <h2 class="h2-page" style="margin-top: 32px;">{{ d.hottub.title }}</h2>
+      {{ d.hottub.text | paras | safe }}
+    </div>
+    <div class="stack">
+      <div style="height: 260px;">{{ photo(d.sauna.image, d.sauna.image_alt) }}</div>
+      <div style="height: 260px;">{{ photo(d.hottub.image, d.hottub.image_alt) }}</div>
+    </div>
+  </section>
+
+  <section class="block-sm panel" style="padding: 30px 34px; max-width: 760px;">
+    <h3 style="font-size: 24px;">{{ d.bbq.title }}</h3>
+    <p style="margin: 0; color: var(--color-neutral-800);">{{ d.bbq.text }}</p>
+  </section>
+
+  <section class="block">
+    <h2 class="h2-page">{{ d.garden.title }}</h2>
+    <div class="measure-wide">{{ d.garden.text | paras | safe }}</div>
+    <div class="grid-photos" style="margin-top: 24px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+      {%- for m in d.garden.images %}<div style="height: 320px;">{{ photo(m.image, m.alt) }}</div>{% endfor %}
+    </div>
+  </section>
+</main>
