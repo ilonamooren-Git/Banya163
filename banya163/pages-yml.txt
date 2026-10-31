@@ -3,14 +3,14 @@
 # Lege foto = er verschijnt een beige vak met de omschrijving; vul die vóór livegang.
 
 media:
-  input: pages/images
+  input: banya163/pages/images
   output: /images
 
 content:
   - name: site
     label: Algemeen (contact & footer)
     type: file
-    path: content/site.json
+    path: banya163/content/site.json
     format: json
     fields:
       - { name: name, label: Naam, type: string }
@@ -26,7 +26,7 @@ content:
   - name: home
     label: Home
     type: file
-    path: content/home.json
+    path: banya163/content/home.json
     format: json
     fields:
       - name: hero
@@ -138,7 +138,7 @@ content:
   - name: huisje
     label: Het huisje
     type: file
-    path: content/huisje.json
+    path: banya163/content/huisje.json
     format: json
     fields:
       - { name: title, label: Titel, type: string }
@@ -182,7 +182,7 @@ content:
   - name: wellness
     label: Wellness & tuin
     type: file
-    path: content/wellness.json
+    path: banya163/content/wellness.json
     format: json
     fields:
       - { name: title, label: Titel, type: string }
@@ -228,7 +228,7 @@ content:
   - name: omgeving
     label: Omgeving
     type: file
-    path: content/omgeving.json
+    path: banya163/content/omgeving.json
     format: json
     fields:
       - { name: title, label: Titel, type: string }
@@ -259,7 +259,7 @@ content:
   - name: fotos
     label: Foto's
     type: file
-    path: content/fotos.json
+    path: banya163/content/fotos.json
     format: json
     fields:
       - { name: title, label: Titel, type: string }
@@ -276,7 +276,7 @@ content:
   - name: boeken
     label: Beschikbaarheid & prijzen
     type: file
-    path: content/boeken.json
+    path: banya163/content/boeken.json
     format: json
     fields:
       - { name: title, label: Titel, type: string }
@@ -305,7 +305,7 @@ content:
   - name: praktisch
     label: Praktisch
     type: file
-    path: content/praktisch.json
+    path: banya163/content/praktisch.json
     format: json
     fields:
       - { name: title, label: Titel, type: string }
