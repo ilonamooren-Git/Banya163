@@ -12,6 +12,8 @@ Statische site (Eleventy) met Pages CMS voor teksten en foto's, gehost op Netlif
 
 ## Dagelijks beheer
 
+De website wordt gebouwd vanuit de map `banya163/`. Het CMS gebruikt de `.pages.yml` in de hoofdmap van de repository: alle contentpaden verwijzen naar `banya163/content/` en uploads naar `banya163/pages/images` (publiek als `/images`). De oude map `content/` in de hoofdmap wordt niet meer gebruikt.
+
 - Open app.pagescms.org, kies een pagina, pas aan, klik **Save**. Netlify bouwt de site automatisch opnieuw; na ~1 minuut staat de wijziging live.
 - Tekstvak: een lege regel = nieuwe alinea.
 - Foto's: upload gewoon het origineel, de site verkleint ze automatisch.

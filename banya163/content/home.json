@@ -39,7 +39,6 @@
       "Rust",
       "Huisdieren welkom"
     ],
-    "image_1": "",
     "image_1_alt": "Interieur met pelletkachel",
     "image_2": "/images/bostuin.jpg",
     "image_2_alt": "De bostuin"
@@ -58,7 +57,6 @@
       {
         "title": "Luxe keuken",
         "text": "Een grote SMEG-oven, goed gereedschap en ruimte om samen te koken. Boodschappen haal je in het dorp, de rest van de avond duurt vanzelf lang.",
-        "image": "",
         "image_alt": "De SMEG-keuken",
         "link_text": "Naar het huisje →",
         "link": "/het-huisje/"
@@ -76,13 +74,11 @@
   "dog": {
     "title": "Ook je hond komt hier tot rust",
     "text": "Huisdieren zijn van harte welkom. De tuin is volledig omheind, bij de deur staan een bak en een handdoek klaar, en het bospad begint letterlijk achter het hek.\n\nWe vragen alleen: niet op de bank en niet alleen in het huisje achterlaten.",
-    "image": "",
     "image_alt": "Hond op de veranda"
   },
   "about": {
     "title": "Wie wij zijn",
-    "text": "Wij zijn Ilona en [naam], de eigenaren van Banya 163. We bouwden het huisje op de plek waar we zelf het liefst zijn: tussen de bomen, met de sauna aan en de telefoon uit.\n\nAlles hier is met zorg ingericht, van de keuken tot de planten in de tuin. Kom je aan, dan is het huisje warm. Heb je een vraag, dan zijn we dichtbij.",
-    "image": "",
+    "text": "Wij zijn Nick en Ilona, de eigenaren van Banya 163. Toen we het houten huisje kochten, stond alleen de basis er nog maar. Met veel liefde hebben we het helemaal afgemaakt, de tuin aangelegd, een groot tuinhuis met veranda geplaatst, en zelfs de sauna zelf gebouwd. We hebben er een plek van gemaakt waar we zelf het liefst de rust opzoeken en even kunnen onthaasten. \n\nAlles hier is met zorg ingericht, van de keuken tot de planten in de tuin. We hopen dat jij je hier net zo thuis voelt als wij. Kom je aan, dan is het huisje warm. Heb je een vraag, dan zijn we dichtbij.",
     "image_alt": "Foto van ons samen"
   },
   "mood": {
@@ -94,15 +90,12 @@
         "alt": "Banya 163"
       },
       {
-        "image": "",
         "alt": "Sfeerbeeld"
       },
       {
-        "image": "",
         "alt": "Sfeerbeeld"
       },
       {
-        "image": "",
         "alt": "Sfeerbeeld"
       }
     ],
